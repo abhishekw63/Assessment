@@ -1,4 +1,5 @@
 #include<iostream>
+int a;
 using namespace std;
 class Billing
 {
