@@ -23,7 +23,8 @@ class PolicyRecord(models.Model):
     status = models.CharField(max_length=100,default='Pending')
     creation_date =models.DateField(auto_now=True)
     def __str__(self):
-        return self.policy
+        return f"{self.customer} - {self.Policy.policy_name}"
+
 
 class Question(models.Model):
     customer= models.ForeignKey(Customer, on_delete=models.CASCADE)
