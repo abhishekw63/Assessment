@@ -1,0 +1,5 @@
+1)What is backend developer?
+2)What is python?
+3)What is OOPs?
+4)Why did you chose python as your carrer programming language?
+5)what is django? why did you chose Django instead of flask?
