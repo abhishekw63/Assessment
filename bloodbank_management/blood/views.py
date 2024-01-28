@@ -49,7 +49,7 @@ def home_view(request):
         blood8.bloodgroup="O-"
         blood8.save()
 
-    if request.user.is_authenticated:
+    if request.user.is_authenticated: 
         return HttpResponseRedirect('afterlogin')  
     return render(request,'blood/index.html')
 
@@ -92,7 +92,7 @@ def admin_dashboard_view(request):
 @login_required(login_url='adminlogin')
 def admin_blood_view(request):
     dict={
-        'bloodForm':forms.BloodForm(),
+        'bloodForm':forms.BloodForm(), #why is this here?
         'A1':models.Stock.objects.get(bloodgroup="A+"),
         'A2':models.Stock.objects.get(bloodgroup="A-"),
         'B1':models.Stock.objects.get(bloodgroup="B+"),
@@ -102,6 +102,7 @@ def admin_blood_view(request):
         'O1':models.Stock.objects.get(bloodgroup="O+"),
         'O2':models.Stock.objects.get(bloodgroup="O-"),
     }
+    
     if request.method=='POST':
         bloodForm=forms.BloodForm(request.POST)
         if bloodForm.is_valid() :        
