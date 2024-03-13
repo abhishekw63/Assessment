@@ -1,0 +1,32 @@
+{
+    "101": {
+        "Name": "anjali",
+        "Balance": 2000,
+        "Gender": "Female",
+        "Age": 40
+    },
+    "102": {
+        "Name": "raj",
+        "Balance": 1000,
+        "Gender": "Male",
+        "Age": 50
+    },
+    "103": {
+        "Name": "abhishek",
+        "Balance": 2500,
+        "Gender": "Male",
+        "Age": 20
+    },
+    "104": {
+        "Name": "shivam",
+        "Balance": 3000,
+        "Gender": "Male",
+        "Age": 30
+    },
+    "1001": {
+        "Name": "arpit",
+        "Balance": 1000,
+        "Gender": "male",
+        "Age": 30
+    }
+}

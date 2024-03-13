@@ -1,0 +1,34 @@
+Notes:
+-created virtual environment and project side by side.
+-created superuser with username and pwd:admin
+-created users in django-admin and pwd is common for all- Abhishek@7969
+    user:being_wagh,agrawal26
+-Navigate to this link for normal user:http://127.0.0.1:8000/
+-navigate to this link for Librarian user: http://127.0.0.1:8000/librarian/
+
+
+
+Build a library Management System using Django (Python Framework).
+Two Users would be there :
+ 
+1) Normal User
+- Login (done)
+- See the available books (done)
+- See Books assigned to User (done)
+- See the renewal date (done)
+- Request for the book(done)
+- Logout(done)
+ 
+2) Librarian User
+- Dashboard (done)
+- Add Book and it's details (done)
+- See the stock and status of book (Add filter)  (done)
+- Can approve the request of book of user (done)
+- Can view list of books and user to whom the book is assigned at right now.If assigned to an user, can revoke it from user and made available. (done)
+- Select a book and view it's details.(done in dashboard)
+- Logout (done)
+
+Notes : 
+• Please make sure for relationship between Models.
+    -UserProfile and User model has one to one relationship.
+    -Bookrequest and Book model has  one to many relationship.
